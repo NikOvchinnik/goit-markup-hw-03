@@ -71,11 +71,12 @@ img {
 
 .header-container {
   display: flex;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .header-navigation {
   display: flex;
-  flex-grow: 1;
+  align-items: center
 }
 
 .header-logo {
@@ -116,13 +117,16 @@ img {
 
 .header-address {
   font-style: normal;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  margin-left: auto;
+  display: flex;
+  align-items: center
 }
 
 .header-address-list {
   display: flex;
   gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-address-link {
@@ -167,6 +171,7 @@ img {
   border: none;
   display: block;
   margin: 0 auto;
+  min-width: 169px
 }
 
 .content-btn:hover,
@@ -257,8 +262,8 @@ img {
   width: calc(100% - 24px * 3) / 4;
 }
 
-.team-img {
-  margin-bottom: 32px;
+.team-item-container {
+  padding: 32px 16px;
 }
 
 .team-item-title {
@@ -275,14 +280,13 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  margin-bottom: 32px;
 }
 
 /* Footer */
 
 .footer {
   background-color: var(--basic-color);
-  padding-top: 101.5px;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 
@@ -294,8 +298,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  display: block;
-  margin-bottom: 17.5px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-span-logo {
@@ -341,6 +345,7 @@ img {
 .portfolio-btn:focus {
   background-color: var(--hover-color);
   color: var(--white-color);
+  border: 1px solid transparent;
 }
 
 .works-list {
@@ -351,13 +356,13 @@ img {
 
 .works-item {
   width: calc((100% - 24px * 2) / 3);
-  border: 1px solid var(--border-color);
   background-color: var(--white-color);
-  padding-bottom: 32px;
 }
 
-.works-img {
-  margin-bottom: 32px;
+.works-item-container {
+  padding: 32px 16px;
+  border: 1px solid var(--border-color);
+  border-top: none;
 }
 
 .works-title {
@@ -367,12 +372,10 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  padding: 0px 16px;
 }
 
 .works-text {
   color: var(--text-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 0px 16px;
 }
