@@ -69,14 +69,18 @@ img {
 
 /* Header */
 
+.header {
+  border-bottom: 1px solid var(--border-color);
+}
+
 .header-container {
   display: flex;
-  border-bottom: 1px solid var(--border-color);
 }
 
 .header-navigation {
   display: flex;
-  align-items: center
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-logo {
@@ -88,8 +92,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
-  padding-top: 25.5px;
-  padding-bottom: 25.5px;
 }
 
 .span-logo {
@@ -99,8 +101,6 @@ img {
 .header-list {
   display: flex;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .header-link {
@@ -119,7 +119,7 @@ img {
   font-style: normal;
   margin-left: auto;
   display: flex;
-  align-items: center
+  align-items: center;
 }
 
 .header-address-list {
@@ -171,7 +171,7 @@ img {
   border: none;
   display: block;
   margin: 0 auto;
-  min-width: 169px
+  min-width: 169px;
 }
 
 .content-btn:hover,
