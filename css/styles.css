@@ -79,6 +79,7 @@ img {
 
 .header-navigation {
   display: flex;
+  align-items: center;
 }
 
 .header-logo {
